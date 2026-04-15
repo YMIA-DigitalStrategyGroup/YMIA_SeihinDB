@@ -1,0 +1,95 @@
+{
+  "Name": "出荷予定日送信",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "指定日",
+          "DataValidationInfo": {},
+          "TestData": "2025-06-01"
+        },
+        {
+          "Name": "メールタイトル",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "本日日付",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "送信者アドレス",
+          "DataValidationInfo": {}
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ExportActiveReportCommand, ServerDesignerCommon",
+      "ExportReportNameList": [
+        "出荷予定情報"
+      ],
+      "CustomName": "出荷予定情報",
+      "ServerExportFileName": "F:\\temp\\出荷予定情報.PDF",
+      "ExportSettings": {
+        "MultiSheet": true
+      },
+      "PassParameters": [
+        {
+          "TargetParameter": "指定日",
+          "SourceValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=指定日"
+          }
+        }
+      ],
+      "IsPageBreakBefores": [
+        false
+      ],
+      "ReportGaps": [
+        "0cm"
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=送信者アドレス"
+      },
+      "EnhancedRecipient": {
+        "CommonValue": "nagasu-exp@crux.ocn.ne.jp"
+      },
+      "Subject": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=メールタイトル"
+      },
+      "Content": "いつもお世話になり有難うございます。\r\n\r\n出荷予定を送付致します。\r\n\r\n指定日 [=指定日] ～\r\n",
+      "EnhancedCC": {
+        "CommonValue": "kotaro_kawano@yanmar.com;nozomi_ayabe@yanmar.com"
+      },
+      "Attachments": "f:\\temp\\出荷予定情報.PDF",
+      "ID": "d40fab989df74cf8a8b27cf7995740ee"
+    }
+  ]
+}

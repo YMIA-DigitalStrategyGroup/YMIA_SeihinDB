@@ -1,0 +1,79 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 82
+  },
+  "Values": {
+    "1,1": "YMIA製品情報データベース"
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 48.0,
+        "FontStyle": 0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Italic",
+        "Bold",
+        "Background 1 0",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "1,1,3,80"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "製品情報DB",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "62f8bc3a-8b07-464a-8453-03e6858c95c9.jpg",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "SV_YANMARX47_001.jpg",
+      "ForguncyPictureSourceType": 0,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "518.3999633789062,345.6000061035156"
+    }
+  ]
+}//JXWfHbgrXa4VMh6FjxeH4jGSlqm3pPjpqmq7KIkA0Lc8wFzkS2oFWg8BvKMJaLazsj2FeYn+mrkRiI2lWVW2hwfYxl2tJTch02RlkKT7X4yHwxS+W7218ZqsKpLI4DTaNXaL2aM4567+tBqKuh4+aFF0oyjArTXDBYMl8iS+stER1Jl4blqtNajt7+yc6zICFtn1o3+yvO33u5uNA5D/MdHv/cBZuroCbhCjWS3T+KEZUi4m/YV18SqF2zuvlXaghJMZqxSfqVR3Xh2D7vhowZtznszhbY3diauhhqrGrwuCP9JnKhiFUX3tZQRNP5e8trKLFGdHHhANjV09HzkpXWcKAEI1xYKjzDKZ5txS+z666Ln+cg5hRaYjujqspBQvGEBpK37AzryLKCoEfTOslpHlcf8GQrM0ji1FUmBU0UYoYPaUvJJt88VP7I5czdarlLz2h3Ff54xu6H0vBxSqVw9o07pIhBvmrNdAA2arQFZKzFcunX4+rbvDpvhmEEP7Vm5WoBGnRA27cbb7dXgY3CHfjvEkkiRKhvWr7hPA03mnutm5GZiAQcIvKbC/9PRd20FC0qTpwR+48qkDl5w1g1+ujZRHpyQMgbFR/pgLk8YS5USEzxsHItvPqr4KqGEe0/xOVrEQq3c50GitDu7NbOmPZJiHJ5n3MImYg57Sviun6EnQ9eQioQjP5C6Nr6SdGiFP9nxKxOVyds24YTw9W7oSiVOc67frlT4l+yJs4wcdMLn98ruUK/CQTc0QOEpJd8Qf/NNW5VxWo1YU0TppAuKFJkwpRkQdT/po811yY44lJHVDkhHin06ToJX3au82etSYBRrjyV5LIgWxpGKxcCTUEMeufHkfmZini7MlAcPYsabTXz51ysDtmjlkxSmkAxf/zAaDCCRGXoZTAIoKZg==|920

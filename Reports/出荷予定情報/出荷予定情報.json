@@ -1,0 +1,228 @@
+{
+  "Name": "出荷予定情報",
+  "DataSources": [
+    {
+      "Name": "出荷予定情報",
+      "GUID": "10011c1e-960d-4b10-91d5-56f15cb5616d",
+      "DataSourceSetting": {
+        "TableName": "v_baa23onbaa20",
+        "BindingInfos": [
+          {
+            "GUID": "f087e507-d587-4595-ac90-910713184dac",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23280",
+              "GUID": "fb3f6a6b-048e-493d-9fdb-fb834d7386d7"
+            },
+            "ColumnName": "出荷予定日"
+          },
+          {
+            "GUID": "2d27b402-0545-4584-9e1f-ea949e6bcb9b",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23420",
+              "GUID": "5bb16359-adb4-4dc1-9ccb-a2ec49a146ae"
+            },
+            "ColumnName": "手配"
+          },
+          {
+            "GUID": "6e0de238-196e-445d-be2d-9858097301aa",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23150",
+              "GUID": "651879e6-e90d-4e0e-828a-12f83f41bb64"
+            },
+            "ColumnName": "車種"
+          },
+          {
+            "GUID": "3e0f5b7b-a475-4dc8-b5d6-3056129c34b8",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23430",
+              "GUID": "378df6ca-f4ba-456f-8b49-ba4efe1a655d"
+            },
+            "ColumnName": "時間"
+          },
+          {
+            "GUID": "fdcede3a-fc73-450a-8994-031f7dea342a",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23330",
+              "GUID": "4d664b99-fa04-42d1-8674-e4db5ac4cc70"
+            },
+            "ColumnName": "着日"
+          },
+          {
+            "GUID": "dfdbd594-4a70-4d7c-9e36-841fffe25e81",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23340",
+              "GUID": "aa6b7574-455a-40dc-89de-33c4b0297cf4"
+            },
+            "ColumnName": "着日時間"
+          },
+          {
+            "GUID": "234fd186-6f1c-4a5a-b4dc-cf7eae37f45c",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23080",
+              "GUID": "0adb1bdf-bc89-464f-b365-542bbde2f3e4"
+            },
+            "ColumnName": "艇種"
+          },
+          {
+            "GUID": "6df82568-97bf-459b-aa79-0863524acf35",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23090",
+              "GUID": "d91692be-06f0-4374-bd2a-fd42e1d8068c"
+            },
+            "ColumnName": "艇番"
+          },
+          {
+            "GUID": "863419c9-30a1-41f8-aef0-f85121a5e92e",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23120",
+              "GUID": "aaf95351-8898-4d96-93b1-cdc6a3d5527f"
+            },
+            "ColumnName": "出荷製品"
+          },
+          {
+            "GUID": "ade15cd7-d72b-4004-ad75-740a518084f2",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23040",
+              "GUID": "11f68f14-9073-4d16-a722-918ad2b4e1f4"
+            },
+            "ColumnName": "物件管理番号"
+          },
+          {
+            "GUID": "7e99734b-ed58-469d-91de-ab0c7c142b08",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23170",
+              "GUID": "85c635c2-2ea4-4e24-91eb-0a53d4c494d6"
+            },
+            "ColumnName": "送り先"
+          },
+          {
+            "GUID": "86215925-0ab6-4b90-a3a7-5ba0b6083641",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23180",
+              "GUID": "f41abe53-48c8-4c66-9217-caf0a0c9955c"
+            },
+            "ColumnName": "住所"
+          },
+          {
+            "GUID": "00f43881-0181-4036-a62e-72e77388efc4",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23360",
+              "GUID": "c9a332ca-79be-4f1a-9741-b1053fd87319"
+            },
+            "ColumnName": "担当"
+          },
+          {
+            "GUID": "0cece54b-1781-4736-a11f-9cd20214138a",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23270",
+              "GUID": "91c81f44-52bf-4ed2-89d9-aec6fab49150"
+            },
+            "ColumnName": "社内連絡"
+          },
+          {
+            "GUID": "97cf86e4-032a-4098-ad5a-a7cc5dbf6003",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23400",
+              "GUID": "bd336ae6-02b5-4357-a6fa-67e83fa2b7a9"
+            },
+            "ColumnName": "確認"
+          },
+          {
+            "GUID": "dd89eec4-7bb7-4b9b-a784-7e552a10cbcd",
+            "BindingInfo": {
+              "TableName": "v_baa23onbaa20",
+              "ColumnName": "A23300",
+              "GUID": "84a652f5-3b96-48b4-a9de-190a12de038d"
+            },
+            "ColumnName": "キャンセル"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 3,
+          "ColumnBindingInfo": {
+            "TableName": "v_baa23onbaa20",
+            "ColumnName": "A23280",
+            "GUID": "1a79ffa0-7452-4edd-ad6a-aa02f83fd9b6"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=指定日"
+          }
+        },
+        "OrderBySqlCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_baa23onbaa20",
+                "ColumnName": "A23280",
+                "GUID": "be9d3f30-bad5-43dd-b5c9-70f0b6307569"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "指定日"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

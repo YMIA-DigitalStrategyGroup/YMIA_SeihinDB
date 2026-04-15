@@ -1,0 +1,693 @@
+{
+  "Rows": {
+    "Count": 55
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97
+    ],
+    "Count": 98
+  },
+  "Values": {
+    "1,2": "検索条件１",
+    "1,14": "検索条件２",
+    "1,71": "Excel エクスポート",
+    "2,11": " AND ",
+    "2,24": "検索",
+    "3,1": "AQAS発生情報",
+    "4,2": "管理番号",
+    "4,7": "生産日",
+    "4,11": "発生日",
+    "4,15": "出荷日",
+    "4,19": "艇種・艇番等",
+    "4,25": "艇種・艇番等　情報",
+    "4,28": "発生元",
+    "4,31": "題名",
+    "4,38": "内容",
+    "4,64": "事業所",
+    "4,68": "販社",
+    "4,71": "販社",
+    "4,74": "販社",
+    "4,76": "YMIA出荷日",
+    "4,79": "マリン出荷日",
+    "4,80": "シリアル番号",
+    "4,83": "シリアル情報",
+    "4,85": "HOUR",
+    "4,88": "HOURMETER",
+    "4,90": "出荷日",
+    "4,93": "出荷日",
+    "28,1": "AQAS対応情報",
+    "29,3": "回答日時",
+    "29,11": "応対者",
+    "29,19": "対応内容・コメント",
+    "29,54": "対応状況"
+  },
+  "AttachInfos": {
+    "1,71": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "Excelに出力しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー1",
+                    "NewOtherName": "AQAS情報",
+                    "IsOnlyExportValue": false
+                  }
+                ],
+                "ID": "e0c2bd6e-b60f-40b3-8f3d-c1788a33dcda"
+              }
+            ]
+          }
+        ],
+        "Text": "Excel エクスポート",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "艇種・艇番等を入力"
+      }
+    },
+    "2,14": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "艇種・艇番等を入力"
+      }
+    },
+    "2,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "V_YMRServiceRequestTableEntity",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "V_YMRServiceRequestTableEntity",
+                    "ColumnName": "PRODUCTSERIALNUMBER",
+                    "GUID": "13535259-4771-468d-9029-c5e631eb6283"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=AQAS情報!C3"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "V_YMRServiceRequestTableEntity",
+                    "ColumnName": "PRODUCTSERIALNUMBER",
+                    "GUID": "3238f12f-1635-4f75-ade7-b035b24a0c5a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=AQAS情報!O3"
+                  }
+                }
+              ]
+            },
+            "ID": "b92a32c7c08c4c91bff51e8f85beef8f"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 23,
+        "ColumnCount": 96,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V_YMRServiceRequestTableEntity",
+                "ColumnName": "FAILUREDATE",
+                "GUID": "57c198c6-06fb-4182-8ce9-e8397e7d2008"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "FrozenIndex": 6,
+        "AutoFitRowHeight": true,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "5,1": {
+      "IsCellIgnoreHideInListview": true
+    },
+    "5,2": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "SRNO",
+        "GUID": "4d118d05-040e-403b-aef7-8f13cdcf6941"
+      }
+    },
+    "5,7": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "MANUFACTUREDDATE",
+        "GUID": "4303649a-0e0b-4f10-ab1e-f1d622176d71"
+      }
+    },
+    "5,11": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "FAILUREDATE",
+        "GUID": "96b15039-f45a-489e-881b-b5046e0cf29f"
+      }
+    },
+    "5,15": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "FACTORYSHIPDATE",
+        "GUID": "dacbddb9-f981-4ffc-aa58-95fde0835020"
+      }
+    },
+    "5,19": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "PRODUCTSERIALNUMBER",
+        "GUID": "1d760eb9-cc13-4dac-8a4e-c97a75362a29"
+      }
+    },
+    "5,31": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "TITLE1",
+        "GUID": "8a10a0fa-4a38-4f2f-8627-e282a851b4be"
+      }
+    },
+    "5,38": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "ISSUESTR",
+        "GUID": "3631b36f-572c-4c79-bc15-9ec8ecf8cdd5"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      }
+    },
+    "5,64": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "SALESCOMPANYADDRESSGROUP",
+        "GUID": "92b0c3f3-e2af-4360-a88f-d8f704bfd110"
+      }
+    },
+    "5,71": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "DEPARTMENTNAME",
+        "GUID": "38de18bd-725b-4815-8d4e-17463ebca7f7"
+      }
+    },
+    "5,79": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "DELIVERYDATE_MARINE",
+        "GUID": "d25f6df1-84cb-4bcd-a92f-d4446573a089"
+      }
+    },
+    "5,83": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "PRODUCTSN",
+        "GUID": "5a2b596c-b604-48cd-ac98-9e90936cbf94"
+      }
+    },
+    "5,88": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "HOURMETER",
+        "GUID": "96c76109-955c-4ef4-aef4-21e100f84be4"
+      }
+    },
+    "5,93": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestTableEntity",
+        "ColumnName": "DELIVERYDATE",
+        "GUID": "711668f3-a101-46b2-9ea3-ee3f617e278b"
+      }
+    },
+    "29,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "V_YMRServiceRequestDetailEntity",
+        "RowIndex": 29,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 64,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "SRNO",
+          "MasterTable": "V_YMRServiceRequestTableEntity",
+          "ColumnOfMasterTable": "SRNO",
+          "DataCommitType": 2
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V_YMRServiceRequestDetailEntity",
+                "ColumnName": "SENTDATETIME",
+                "GUID": "d0838f6e-134c-4fc7-8c69-8d8bf7621425"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "AutoFitRowHeight": true,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "30,2": {
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestDetailEntity",
+        "ColumnName": "SRNO",
+        "GUID": "907a772a-e13d-42c4-854f-19d72090a1a0"
+      }
+    },
+    "30,3": {
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestDetailEntity",
+        "ColumnName": "SENTDATETIME",
+        "GUID": "081b1d16-c776-450d-afa6-20193e0811c8"
+      }
+    },
+    "30,11": {
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestDetailEntity",
+        "ColumnName": "FROMGROUP",
+        "GUID": "89ddc708-db5b-4020-8fe3-e4dad33ae9b0"
+      }
+    },
+    "30,19": {
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestDetailEntity",
+        "ColumnName": "COMMENT",
+        "GUID": "bdfac4a2-2530-413c-8cf5-ca49e07fa02f"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      }
+    },
+    "30,54": {
+      "BindingInfo": {
+        "TableName": "V_YMRServiceRequestDetailEntity",
+        "ColumnName": "ACTION",
+        "GUID": "690fa1d2-6161-4a07-85e2-1f56165ee1d4"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "Background": 2
+      },
+      {
+        "Background": 3,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 4,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 10,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Formatter": 4,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "Accent 2 -50",
+        "Accent 3 80",
+        "@",
+        "black",
+        "Center",
+        "yyyy/m/d",
+        "Right",
+        "Top",
+        "#,##0.0"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,71": 1,
+      "2,2": 2,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 3,
+      "2,9": 3,
+      "2,10": 4,
+      "2,11": 5,
+      "2,14": 6,
+      "2,15": 7,
+      "2,16": 7,
+      "2,17": 7,
+      "2,18": 7,
+      "2,19": 7,
+      "2,20": 7,
+      "2,21": 7,
+      "2,22": 8,
+      "2,24": 0,
+      "2,25": 9,
+      "2,26": 9,
+      "2,27": 9,
+      "2,28": 9,
+      "3,1": 0,
+      "4,1": 10,
+      "4,2": 10,
+      "4,7": 11,
+      "4,11": 11,
+      "4,15": 10,
+      "4,19": 10,
+      "4,25": 10,
+      "4,28": 10,
+      "4,31": 10,
+      "4,38": 12,
+      "4,64": 10,
+      "4,71": 10,
+      "4,74": 10,
+      "4,76": 10,
+      "4,79": 10,
+      "4,80": 10,
+      "4,83": 10,
+      "4,85": 10,
+      "4,88": 10,
+      "4,90": 10,
+      "4,93": 10,
+      "5,1": 10,
+      "5,2": 10,
+      "5,7": 13,
+      "5,11": 13,
+      "5,15": 13,
+      "5,19": 11,
+      "5,20": 9,
+      "5,21": 9,
+      "5,22": 9,
+      "5,23": 9,
+      "5,24": 9,
+      "5,25": 9,
+      "5,26": 9,
+      "5,27": 9,
+      "5,28": 9,
+      "5,29": 9,
+      "5,30": 9,
+      "5,31": 11,
+      "5,38": 14,
+      "5,64": 11,
+      "5,65": 9,
+      "5,66": 9,
+      "5,67": 9,
+      "5,68": 9,
+      "5,69": 9,
+      "5,70": 9,
+      "5,71": 15,
+      "5,72": 9,
+      "5,73": 9,
+      "5,74": 9,
+      "5,75": 9,
+      "5,76": 9,
+      "5,77": 9,
+      "5,78": 9,
+      "5,79": 13,
+      "5,80": 9,
+      "5,81": 9,
+      "5,82": 9,
+      "5,83": 11,
+      "5,84": 9,
+      "5,85": 9,
+      "5,86": 9,
+      "5,87": 9,
+      "5,88": 16,
+      "5,89": 9,
+      "5,90": 9,
+      "5,91": 9,
+      "5,92": 9,
+      "5,93": 13,
+      "5,94": 9,
+      "5,95": 9,
+      "5,96": 9,
+      "29,1": 10,
+      "29,2": 10,
+      "29,3": 10,
+      "29,11": 10,
+      "29,19": 10,
+      "29,54": 10,
+      "29,62": 10,
+      "29,63": 10,
+      "29,64": 10,
+      "30,1": 10,
+      "30,2": 10,
+      "30,3": 17,
+      "30,11": 10,
+      "30,19": 18,
+      "30,54": 10,
+      "30,62": 10,
+      "30,63": 10,
+      "30,64": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,2,1,5",
+    "2,2,1,9",
+    "31,1,19,64",
+    "30,3,1,8",
+    "30,11,1,8",
+    "30,54,1,8",
+    "30,19,1,35",
+    "2,14,1,9",
+    "2,24,1,5",
+    "2,11,1,3",
+    "5,7,1,4",
+    "5,11,1,4",
+    "5,15,1,4",
+    "5,19,1,12",
+    "5,31,1,7",
+    "6,1,21,96",
+    "5,71,1,8",
+    "5,79,1,4",
+    "5,83,1,5",
+    "5,88,1,5",
+    "5,93,1,4",
+    "5,64,1,7",
+    "5,38,1,26",
+    "1,71,2,8",
+    "4,2,1,5",
+    "4,7,1,4",
+    "4,11,1,4",
+    "4,15,1,4",
+    "4,19,1,12",
+    "4,31,1,7",
+    "4,38,1,26",
+    "4,64,1,7",
+    "4,71,1,8",
+    "4,79,1,4",
+    "4,83,1,5",
+    "4,88,1,5",
+    "4,93,1,4",
+    "29,3,1,8",
+    "29,11,1,8",
+    "29,19,1,35",
+    "29,54,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "製品情報DB",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "V_YMRServiceRequestTableEntity"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//XWI3asc7YvGZLq25nsBpmxy2/alY/bo9AW3reuGWwS4+4YNt7C61vOdj6dNui+dJxgu+dzrBMkmVg0tGELi1GDCN0j0PCxgYCB3CpKTD9YgGkEaR5MEJ+2sOXFeZ0Ppk8+0x+k9MbIHjX5zNYidCF5mcEZrWj71PQNM5lD78kELrTFmsWwCGG/k9BeGamUIEk7EgLCwj/XmInVixiaeB66TFiTqG0lN0CHjhTN5skbSwX1wLDmUhv3SIAh8214MVdP4JM1ZR8tbfbyD4QCR4PIpBf7QX4Rh7TFAyKq/Vz6PrO0l4f6ns9d87X6SICwlcnXGTFfBsyikVOG29TpSqOIwWnTlBNFc1dzMZCO3QFJFrU2OdjnGSjId3zv/ZC+cWkK9cCNcAQgBYOm3HbtFcORWRR8s5XtTZGNRxkE/L9L2Ff/02DMjWm8/Zv+klHUr+DYleh2nNZ+Tg6Ocao56sV4H/dBNCm2a+oy5Z/9sqxi+H4zhQvfoE8MULjwNFU5dmFfSd24z4crlHWHflU6pLA4+L/vaq0WbDqqZwwPjEVSlGQDt8bTnWlHkxVCDJ6+DvCjzVFA2atlWwPuLS/+NMomBbxlpHovqG1O0AxjKvtWcajPm3NtvcEZCjaRM7YBDmZinIqstgjP/ojBJhPTnl7CPfFzY+vDMvCF1AjINv4slPiJOuq5DOBum7hCfAVfADdnZZJhzpjspz8S7IaJbnf6ejlh0T13jisJXpETQkeg87mJJkVyIJtDFtfXj+/c8ALiPWnctJErTXLOtcsHc4Wplmi3nuGbziIl2o1h3axZpZ9pw6NRblgIU6IK2b2zDmHaDK70vsc9HHtEFb6eQRQ2HCWD3zWftFcGvemMyC+MgRQb1lPsJTTrEWQ8lqNngSI8KrAdsynp2nA/h7UdeMyA==|920

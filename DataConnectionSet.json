@@ -1,0 +1,17 @@
+[
+  {
+    "ConnectionString": "Server=170.71.10.75;User ID=USER01;Password=PASSPORT;Database=zdb;Port=3306",
+    "DataBaseType": "6f9b2f11-4f6a-43db-9b65-bbd46872e09d",
+    "ID": "MySql1"
+  },
+  {
+    "ConnectionString": "Dsn=EDP64;uid=yanmar;pwd=yanmar",
+    "DataBaseType": "3abc35b0-dff8-45a1-82b7-a1261ab98b44",
+    "ID": "Odbc1"
+  },
+  {
+    "ConnectionString": "Data Source=A20ZZZPRDB01;Initial Catalog=AQASDB_REPLICA;Persist Security Info=True;User ID=interface_me;Password=s9z892n43zu?",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer1"
+  }
+]
