@@ -1,16 +1,16 @@
 [
   {
-    "ConnectionString": "Server=170.71.10.75;User ID=USER01;Password=PASSPORT;Database=zdb;Port=3306",
+    "ConnectionString": "A8EWtZKgNeaHNIxuWmme724WM2pWd3lWYJqjdQAMf2XedwVU2ZTW73AU7l+pbnLj0JU97AvoXVYKJPhakeDMfvswcimBSs0MwXlB4MXWkAI=",
     "DataBaseType": "6f9b2f11-4f6a-43db-9b65-bbd46872e09d",
     "ID": "MySql1"
   },
   {
-    "ConnectionString": "Dsn=EDP64;uid=yanmar;pwd=yanmar",
+    "ConnectionString": "9qRUAuWctyBR9nrZUTHIFfseAdbAiBUqRGPBZflfDpE=",
     "DataBaseType": "3abc35b0-dff8-45a1-82b7-a1261ab98b44",
     "ID": "Odbc1"
   },
   {
-    "ConnectionString": "Data Source=A20ZZZPRDB01;Initial Catalog=AQASDB_REPLICA;Persist Security Info=True;User ID=interface_me;Password=s9z892n43zu?",
+    "ConnectionString": "1hewRP7I+QGLSAnM5m/yfpQmrU3I3czZ09WVzd9tneJU/3tvjcppC6tBVnja5+HDDZSe54nWiqgDTAvTU7UBswHRaRyuW9L7GhCpfaFWkqHHkuN3vserVfgaepNfs4lBSj4yzD2hnW8dnY2K2ZwvqB/sE9TcG6QXY1khk5d6Wm4=",
     "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
     "ID": "SqlServer1"
   }
